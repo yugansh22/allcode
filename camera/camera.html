@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <video id="vid" autoplay></video>
+        
+        <script>
+            
+            navigator.mediaDevices.getUserMedia({
+                video: {
+                    width: {
+                        min: 640,
+                        ideal: 1280,
+                        max: 1280
+                    },
+                    height: {
+                        min: 480,
+                        ideal: 720,
+                        max: 720
+                    }
+                }
+            })
+        .then(stream => {
+                document.getElementById("vid").srcObject = stream;
+            })
+            
+        </script>
+    </body>
+</html>

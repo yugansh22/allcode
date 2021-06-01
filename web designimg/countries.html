@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Understanding Properties and their values</title>
+        <style>
+            table, th, td {
+                border: 2px black solid;
+            }
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                text-align: center;
+            }
+            th {
+                height: 30px;
+                vertical-align: bottom;
+            }
+            tr:hover {
+                color: dodgerblue;
+            }
+            tr:nth-child(even) {
+                background-color: burlywood;
+            }
+            .one {
+                background-color: deeppink;
+            }
+            #one {
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Countries and their Capitals</h1>
+        <table>
+            <tr>
+                <th>S. No.</th>
+                <th>Country</th>
+                <th>Capital</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>India</td>
+                <td>New Delhi</td>
+            </tr>
+            <tr class="one">
+                <td>2</td>
+                <td id="one">Australia</td>
+                <td>Canberra</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Denmark</td>
+                <td>Copenhagen</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Egypt</td>
+                <td>Cairo</td>
+            </tr>
+        </table>
+    </body>
+</html>
